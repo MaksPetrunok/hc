@@ -22,6 +22,7 @@ int	read_input()
 			return (0);
 		}
 		photos[i]->id = i;
+		photos[i]->used = 0;
 		scanf("%c %d ", &(photos[i]->orient), &(photos[i]->ntags));
 		if ((photos[i]->tags = malloc(sizeof(char **) * (photos[i]->ntags + 1))) == NULL) {
 			printf("mem allocation error\n");

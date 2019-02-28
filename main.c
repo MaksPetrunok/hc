@@ -5,8 +5,8 @@ int main()
 	if (!read_input())
 		return (1);
 
-
-
+	
+printf("%d\n", get_occurrence(photos[0], photos[3]));
 
 	printf("===== INPUT =====\n");
 	for (int i = 0; i < n_photos; i++) {
