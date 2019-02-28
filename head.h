@@ -8,6 +8,7 @@
 typedef struct	s_photo
 {
 	int		id;
+	int		used;
 	char	orient;
 	int		ntags;
 	char	**tags;
