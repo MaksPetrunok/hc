@@ -4,6 +4,7 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <string.h>
 
 typedef struct	s_photo
 {
@@ -17,6 +18,7 @@ typedef struct	s_photo
 
 extern t_photo	**photos;
 extern int		n_photos;
+int				get_occurrence(t_photo *a, t_photo *b);
 
 int	read_input();
 
