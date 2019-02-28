@@ -4,7 +4,11 @@ int main()
 {
 	if (!read_input())
 		return (1);
-printf(".................\n");
+
+
+
+
+	// debug
 	printf("===== INPUT =====\n");
 	for (int i = 0; i < n_photos; i++) {
 		printf("ID	%d: %c, %d tags: ",
