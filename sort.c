@@ -9,7 +9,7 @@ static void swap(int a, int b)
 {
 	t_photo *buf;
 
-	printf("swap\n");
+	// printf("swap\n");
 	buf = photos[a];
 	photos[a] = photos[b];
 	photos[b] = buf;
@@ -19,10 +19,10 @@ static int partition (int low, int high)
 { 
 	int pivot = photos[high]->ntags;
 	int i = (low - 1); 
-	printf("par ");
+	// printf("par ");
 	for (int j = low; j <= high- 1; j++) 
 	{ 
-		if (photos[j]->ntags <= pivot) 
+		if (photos[j]->ntags >= pivot) 
 		{ 
 			i++;
 			swap(i, j); 
@@ -32,7 +32,7 @@ static int partition (int low, int high)
 	return (i + 1); 
 } 
 
-void quickSort(int low, int high) 
+void sort_by_tags(int low, int high)
 { 
 	if (low < high) 
 	{ 

@@ -8,19 +8,18 @@ int main()
 
 
 
-	// debug
-	// printf("===== INPUT =====\n");
-	// for (int i = 0; i < n_photos; i++) {
-	// 	printf("ID	%d: %c, %d tags: ",
-	// 		photos[i]->id,
-	// 		photos[i]->orient,
-	// 		photos[i]->ntags);
-	// 	for (int j=0; j<photos[i]->ntags; j++)
-	// 		printf("%s ", photos[i]->tags[j]);
-	// 	printf("\n");
-	// }
+	printf("===== INPUT =====\n");
+	for (int i = 0; i < n_photos; i++) {
+		printf("ID	%d: %c, %d tags: ",
+			photos[i]->id,
+			photos[i]->orient,
+			photos[i]->ntags);
+		for (int j=0; j<photos[i]->ntags; j++)
+			printf("%s ", photos[i]->tags[j]);
+		printf("\n");
+	}
 	printf("**********************************\n");
-	quickSort(1, n_photos);
+	sort_by_tags(0, n_photos - 1);
 	printf("===== INPUT =====\n");
 	for (int i = 0; i < n_photos; i++) {
 		printf("ID	%d: %c, %d tags: ",
