@@ -1,12 +1,23 @@
-#include <stdio.h>
-/*
-int	main()
+#include "head.h"
+
+char	**map;
+int		rows;
+int		cols;
+
+int	read_input()
 {
-	int	res[3];
-	while (scanf("%d %d %d\n", res, res + 1, res + 2) > 0)
-	{
-		printf("read values: %d, %d, %d\n", res[0], res[1], res[2]);
+	if (scanf("%d %d\n", &rows, &cols) < 2)
+		return (0);
+	if ((map = malloc(sizeof(char **) * (rows + 1))) == NULL) {
+		printf("mem allocation error\n");
+		return (0);
 	}
-	return 0;
+	for (int i = 0; i < rows; i++) {
+		if ((map[i] = malloc(sizeof(char **) * (cols + 1))) == NULL) {
+			printf("mem allocation error\n");
+			return (0);
+		}
+		scanf("%s\n", map[i]);
+	}
+	return (1);
 }
-*/

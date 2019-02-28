@@ -34,7 +34,7 @@ fclean: clean
 re: fclean all
 
 zip: $(NAME)
-	zip src.zip Makefile $(SRC_LIST)
+	zip src.zip Makefile head.h $(SRC_LIST)
 #	./$(NAME) input_files/file_1 > 1.out
 #	./$(NAME) input_files/file_2 > 2.out
 #	./$(NAME) input_files/file_3 > 3.out
