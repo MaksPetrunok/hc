@@ -19,4 +19,6 @@ extern int		n_photos;
 
 int	read_input();
 
+void quickSort(int low, int high);
+
 #endif
