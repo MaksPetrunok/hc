@@ -12,6 +12,8 @@ SRC_LIST =	main.c \
 			input.c sort.c
 #===========================================================
 
+
+
 OBJ_LIST = $(addprefix $(OBJ_DIR), $(SRC_LIST:.c=.o))
 
 all: $(NAME)
